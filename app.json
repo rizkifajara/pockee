@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "pockee",
+    "name": "Pockee",
     "slug": "pockee",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,22 +8,27 @@
     "scheme": "pockee",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFDF9"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pockee.app"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "backgroundColor": "#FF8C42",
+        "foregroundImage": "./assets/images/icon.png"
       },
+      "package": "com.pockee.app",
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/icon.png"
     },
     "plugins": [
       "expo-router",
@@ -33,10 +38,13 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
+          "backgroundColor": "#FFFDF9",
           "dark": {
-            "backgroundColor": "#000000"
-          }
+            "image": "./assets/images/splash-icon.png",
+            "backgroundColor": "#121212"
+          },
+          "enablePlatformSplash": true,
+          "useLottie": false
         }
       ]
     ],

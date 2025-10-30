@@ -31,7 +31,11 @@ yarn-error.*
 *.pem
 
 # local env files
-.env*.local
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # typescript
 *.tsbuildinfo
@@ -41,3 +45,45 @@ app-example
 # generated native folders
 /ios
 /android
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary files
+*.tmp
+*.temp
+
+# Logs
+logs
+*.log
+
+# Bundle artifacts
+*.jsbundle
+
+# CocoaPods
+/ios/Pods/
+
+# Sentry
+.sentryclirc
+
+# TFLite models
+*.tflite
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Documentation files (development docs)
+*.md
+!README.md
